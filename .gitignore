@@ -66,3 +66,4 @@ data/links.csv
 data/movies.csv
 data/ratings.csv
 data/tags.csv
+data/pyflicks.npz
