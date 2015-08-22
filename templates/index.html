@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+	<title>&#960;Flicks</title>
+
+  <link rel="stylesheet" href="static/bootstrap.min.css">
+  <style type="text/css">
+    a.custom-link:hover {
+      text-decoration: none
+    }
+  </style>
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"> -->
+</head>
+<body>
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron" style="background-color:#b84d45 !important; color:#ffe; padding-top:0px;">
+      <div class="container">
+        <a class="custom-link" href="/"><h1 style="color:#ffe; margin-top:25px; margin-bottom:5px">&#960;Flicks<sup>&beta;</sup></h1></a>
+        <h3 style="margin-top:4px; margin-bottom:2px">Using maths to discover entertainment</h3>
+        <medium>Search and Rate movies and finally click `Recommend`</medium>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h4 class="text-center">Rate as much as you like!</h4>
+          <form class="form-inline" method="post" action="/recommend">
+	          <table class='table table-striped'>
+	          	<tbody>
+	          		{% for item in movie_results %}
+	          		<tr>
+	          			<td>{{item[1]}} </br><span class="label label-success">{{item[2]}}</span></td>
+	          			<td><select name="mid-{{item[0]}}" class="form-control">
+						    <option selected value="0">No Ratings</option>
+						    <option value="1">1 Star</option>
+						    <option value="2">2 Star</option>
+						    <option value="3">3 Star</option>
+						    <option value="4">4 Star</option>
+						    <option value="5">5 Star</option>
+						</select></td>
+	          		</tr>
+	          		{% endfor %}
+	          	</tbody>
+	          </table>
+           <p><button class="btn btn-danger btn-block" type="submit">Submit Ratings &raquo;</button></p>
+          </form>
+        </div>
+      </div>
+
+      <hr>
+
+      <footer>
+        <p>&copy; <a href="https://vikasrtr.github.io">Vikas Raturi</a> 2014</p>
+      </footer>
+    </div> <!-- /container -->
+</body>
+</html>
