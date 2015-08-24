@@ -28,8 +28,8 @@ pyFlicks is available as a Flask application and based on [MovieLens Dataset](ht
  - Then open `localhost:5000` in your browser.
 
 ## Screenshots
-[Rating Interface](https://github.com/vikasrtr/pyflicks/raw/master/screen-1.png)
-[Recommendations](https://github.com/vikasrtr/pyflicks/raw/master/screen-2.png)
+![Rating Interface](https://github.com/vikasrtr/pyflicks/raw/master/screen-1.png)
+![Recommendations](https://github.com/vikasrtr/pyflicks/raw/master/screen-2.png)
 
 # Requirements
  - python 3+
