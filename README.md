@@ -6,10 +6,8 @@ pyFlicks is based on my efforts to create simple movie recommender in python, us
 
 Currently the only algorithm is User-User Collaborative Filtering.
 
-Learn more [on my blog](https://vikasrtr.github.io)
-
 # Why ?
-This is an my attempt to implement and play with the recommender algorithms and techniques, i learn and read about.
+This is an my attempt to implement and play with the recommender algorithms and techniques, which i learn and read about.
 
 I started pyFlicks for sole purpose of designing a full-fledged recommender from ground up.
 
@@ -23,6 +21,7 @@ pyFlicks is available as a Flask application and based on [MovieLens Dataset](ht
  - To run it simply execute the `run.py` from root:
 
 ` >> python3 generate_dataset.py`
+
 ` >> python3 run.py`
 
  - Then open `localhost:5000` in your browser.
